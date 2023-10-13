@@ -12,3 +12,13 @@ Kraken Games is a web-based platform that offers a diverse selection of online g
 
 - **Search Functionality**: Easily find your favorite games using our built-in search bar. Just type the game's name, and you'll be on your way to playing in no time.
 
+- **Full-Screen Gaming**: Enjoy immersive gameplay with our full-screen gaming experience. Click on a game, and it will fill your entire browser window, providing an uninterrupted gaming session.
+
+- **Disguise Website**: Want to keep your gaming habit private? Our "Disguise Website" feature allows you to change the title and favicon of the tab.
+
+## Links
+
+- LINKS FOR GAMES COMING SOON
+
+Enjoy your gaming experience with Kraken Games! Happy gaming!
+
