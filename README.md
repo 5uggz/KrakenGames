@@ -12,4 +12,3 @@ Kraken Games is a web-based platform that offers a diverse selection of online g
 
 - **Search Functionality**: Easily find your favorite games using our built-in search bar. Just type the game's name, and you'll be on your way to playing in no time.
 
-- **Full
