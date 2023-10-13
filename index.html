@@ -2,9 +2,13 @@
 <html>
 <head>
     <title>Kraken Games</title>
+    <link rel="icon" type="image/png" href="default-favicon.png" id="favicon">
 </head>
 <body>
     <h1>Kraken Games</h1>
+    
+    <!-- Disguise Website Button -->
+    <button id="disguiseButton" onclick="disguiseWebsite()">Disguise Website</button>
 
     <!-- Search bar -->
     <input type="text" id="searchInput" placeholder="Search for a game...">
@@ -40,6 +44,12 @@
             iframe.style.height = "100%"; // Fill the whole screen
             iframe.style.border = "0"; // Remove iframe border
             newTab.document.body.appendChild(iframe);
+        }
+
+        function disguiseWebsite() {
+            // Change the title and favicon
+            document.title = "WakeID Portal";
+            document.getElementById("favicon").href = "wakeIDfavicon.png"; // Replace with your chosen favicon
         }
 
         // Search functionality
