@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kraken Games</title>
+    <title>Game Portal</title>
 </head>
 <body>
-    <h1>Kraken Games</h1>
+    <h1>Game Portal</h1>
 
     <!-- Search bar -->
     <input type="text" id="searchInput" placeholder="Search for a game...">
@@ -12,10 +12,10 @@
     <!-- Game list -->
     <ul id="gameList">
         <li>
-            <button onclick="openGame('5uggz.github.io/subwaysurfers/')">Subway Surfers</button>
+            <button onclick="openGame('https://example.com/game1')">Game 1</button>
         </li>
         <li>
-            <button onclick="openGame('5uggz.github.io/retrobowl/')">Retro Bowl</button>
+            <button onclick="openGame('https://example.com/game2')">Game 2</button>
         </li>
         <!-- Add more games with buttons as needed -->
     </ul>
@@ -29,14 +29,16 @@
         // JavaScript code will go here
 
         function openGame(url) {
+            // Create a new tab with an about:blank page
+            var newTab = window.open("about:blank");
+            
             // Create an iframe and set its source to the provided URL
             var iframe = document.createElement("iframe");
             iframe.src = url;
             iframe.style.width = "100%";
-            iframe.style.height = "500px"; // Set the desired height
+            iframe.style.height = "100%"; // Fill the whole screen
             iframe.style.border = "0"; // Remove iframe border
-            document.getElementById("gameIframe").innerHTML = ""; // Clear previous iframe
-            document.getElementById("gameIframe").appendChild(iframe);
+            newTab.document.body.appendChild(iframe);
         }
 
         // Search functionality
