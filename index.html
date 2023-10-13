@@ -2,10 +2,14 @@
 <html>
 <head>
     <title>Kraken Games</title>
-    <link rel="icon" type="image/png" href="default-favicon.png" id="favicon">
+    <link rel="icon" type="image/png" href="kraken_games.png" id="favicon">
 </head>
 <body>
-    <h1>Kraken Games</h1>
+    <div style="text-align: center;">
+        <img src="your-image-url.png" alt="Kraken Games Logo" style="max-width: 100%; height: auto;">
+    </div>
+
+    <h1 style="text-align: center;">Kraken Games</h1>
     
     <!-- Disguise Website Button -->
     <button id="disguiseButton" onclick="disguiseWebsite()">Disguise Website</button>
@@ -62,7 +66,7 @@
                 var button = games[i].getElementsByTagName("button")[0];
                 var gameName = button.innerHTML.toLowerCase();
                 
-                if (gameName.includes(searchValue)) {
+                if (gameName includes(searchValue)) {
                     games[i].style.display = "block";
                 } else {
                     games[i].style.display = "none";
