@@ -21,5 +21,7 @@ Kraken Games is a web-based platform that offers a diverse selection of online g
 - LINKS FOR GAMES COMING SOON
 
 Enjoy your gaming experience with Kraken Games! Happy gaming!
+
+## Website Links
 Link: 5uggz.github.io/krakengames/
 
