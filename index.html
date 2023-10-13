@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kraken Games</title>
+</head>
+<body>
+    <h1>Kraken Games</h1>
+
+    <!-- Search bar -->
+    <input type="text" id="searchInput" placeholder="Search for a game...">
+    
+    <!-- Game list -->
+    <ul id="gameList">
+        <li>
+            <button onclick="openGame('5uggz.github.io/subwaysurfers/')">Subway Surfers</button>
+        </li>
+        <li>
+            <button onclick="openGame('5uggz.github.io/retrobowl/')">Retro Bowl</button>
+        </li>
+        <!-- Add more games with buttons as needed -->
+    </ul>
+
+    <!-- Iframe container -->
+    <div id="gameIframe">
+        <!-- Iframe will be added dynamically here -->
+    </div>
+
+    <script>
+        // JavaScript code will go here
+
+        function openGame(url) {
+            // Create an iframe and set its source to the provided URL
+            var iframe = document.createElement("iframe");
+            iframe.src = url;
+            iframe.style.width = "100%";
+            iframe.style.height = "500px"; // Set the desired height
+            iframe.style.border = "0"; // Remove iframe border
+            document.getElementById("gameIframe").innerHTML = ""; // Clear previous iframe
+            document.getElementById("gameIframe").appendChild(iframe);
+        }
+
+        // Search functionality
+        document.getElementById("searchInput").addEventListener("input", function () {
+            var searchValue = this.value.toLowerCase();
+            var gameList = document.getElementById("gameList");
+            var games = gameList.getElementsByTagName("li");
+
+            for (var i = 0; i < games.length; i++) {
+                var button = games[i].getElementsByTagName("button")[0];
+                var gameName = button.innerHTML.toLowerCase();
+                
+                if (gameName.includes(searchValue)) {
+                    games[i].style.display = "block";
+                } else {
+                    games[i].style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
