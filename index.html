@@ -1,145 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kraken Games</title>
     <link rel="icon" type="image/png" href="Kraken_Games.png" id="favicon">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Kraken Games</h1>
+    <header>
+        <h1>Kraken Games</h1>
+    </header>
     
-    <!-- Disguise Website Button -->
-    <button id="disguiseButton" onclick="disguiseWebsite()">Disguise Website</button>
-
-    <!-- Search bar -->
-    <input type="text" id="searchInput" placeholder="Search for a game">
-    
-    <!-- Game list -->
-    <ul id="gameList">
-        <li>
-            <button onclick="openGame('https://fishme.me/main/link.php?url=./games/subway/')">Subway Surfers</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/retrobowl/')">Retro Bowl</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://playcanv.as/p/y3ZFwtwW/')">Swerve</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://flixtor.fi/home')">Flixor (Movies)</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://watch.sling.com/dashboard/home?_branch_match_id=1106932571280562492&utm_campaign=freestream_marquee&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87JzEsvKdNLLCjQAzKz9cOzTauisirdcqqSAHAQl4gkAAAA')">Sling FreeStream (Live TV)</button>
-        </li>
-         <li>
-            <button onclick="openGame('https://jstrieb.github.io/link-lock/create/')">Link Lock (Locking links)</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://eggshooter.best')">Shell Shockers</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/uv/')">UltraViolet(Proxy)</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/cookieclicker/')">Cookie Clicker</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/bitlife/')">BitLife</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/slope/')">Slope</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/flash/?file=tiq.swf')">The Impossible Quiz</button>
-        </li>
-         <li>
-            <button onclick="openGame('https://fishme.me/main/games/basketbros/')">Basket Bros</button>
-        </li>
-         <li>
-            <button onclick="openGame('https://fishme.me/main/games/1v1lol/')">1v1.lol</button>
-        </li>
-         <li>
-            <button onclick="openGame('https://fishme.me/main/games/rooftop-snipers/')">Rooftop Snipers</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/minor/')">Minecraft</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/fnaf1/')">FNAF 1</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://scratch.mit.edu/projects/105500895/embed')">Geometry Dash</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/sm64/')">SuperMario64</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://gameshost.io/HTML5GAMES/moto-x3m/')">MotoX3M</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/run3/')">Run 3</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/doom/')">Doom Eternal</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/crossyroad/')">Crossy Road</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/tetris/')">Tetris</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/wordle/#daily')">Wordle+</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/cuttherope/')">Cut the Rope</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/getaway-shootout/')">Getaway Shootout</button>
-        </li>
-        <li>
-            <button onclick="openGame('https://fishme.me/main/games/ovo/')">ovo</button>
-        </li>
+    <main>
+        <button id="disguiseButton" onclick="disguiseWebsite">Disguise Website</button>
         
+        <input type="text" id="searchInput" placeholder="Search for a game">
         
-        <!-- Add more games with buttons as needed -->
-    </ul>
+        <ul id="gameList">
+            <li><button onclick="openGame('https://fishme.me/main/link.php?url=./games/subway/')">Subway Surfers</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/retrobowl/')">Retro Bowl</button></li>
+            <li><button onclick="openGame('https://playcanv.as/p/y3ZFwtwW/')">Swerve</button></li>
+            <li><button onclick="openGame('https://flixtor.fi/home')">Flixor (Movies)</button></li>
+            <li><button onclick="openGame('https://watch.sling.com/dashboard/home?_branch_match_id=1106932571280562492&utm_campaign=freestream_marquee&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87JzEsvKdNLLCjQAzKz9cOzTauisirdcqqSAHAQl4gkAAAA')">Sling FreeStream (Live TV)</button></li>
+            <li><button onclick="openGame('https://jstrieb.github.io/link-lock/create/')">Link Lock (Locking links)</button></li>
+            <li><button onclick="openGame('https://eggshooter.best')">Shell Shockers</button></li>
+            <li><button onclick="openGame('https://fishme.me/uv/')">UltraViolet(Proxy)</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/cookieclicker/')">Cookie Clicker</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/bitlife/')">BitLife</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/slope/')">Slope</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/flash/?file=tiq.swf')">The Impossible Quiz</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/basketbros/')">Basket Bros</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/1v1lol/')">1v1.lol</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/rooftop-snipers/')">Rooftop Snipers</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/minor/')">Minecraft</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/fnaf1/')">FNAF 1</button></li>
+            <li><button onclick="openGame('https://scratch.mit.edu/projects/105500895/embed')">Geometry Dash</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/sm64/')">SuperMario64</button></li>
+            <li><button onclick="openGame('https://gameshost.io/HTML5GAMES/moto-x3m/')">MotoX3M</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/run3/')">Run 3</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/doom/')">Doom Eternal</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/crossyroad/')">Crossy Road</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/tetris/')">Tetris</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/wordle/#daily')">Wordle+</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/cuttherope/')">Cut the Rope</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/getaway-shootout/')">Getaway Shootout</button></li>
+            <li><button onclick="openGame('https://fishme.me/main/games/ovo/')">ovo</button></li>
+            <!-- Add more games with buttons as needed -->
+        </ul>
 
-    <!-- Iframe container -->
-    <div id="gameIframe">
-        <!-- Iframe will be added dynamically here -->
-    </div>
+        <div id="gameIframe"></div>
+    </main>
 
-    <!-- GitHub Link Image Button -->
-    <div style="text-align: center; margin-top: 20px;">
-    <a href="https://github.com/5uggz/KrakenGames" target="_blank">
-        <img src="github.png" alt="GitHub" style="cursor: pointer; width: 672px; height: 371px;">
-    </a>
-</div>
-
+    <footer>
+        <div class="github-link">
+            <a href="https://github.com/5uggz/KrakenGames" target="_blank">
+                <img src="github.png" alt="GitHub" width="672" height="371" style="cursor: pointer;">
+            </a>
+        </div>
+    </footer>
 
     <script>
-        // JavaScript code will go here
-
         function openGame(url) {
-            // Create a new tab with an about:blank page
             var newTab = window.open("about:blank");
-            
-            // Create an iframe and set its source to the provided URL
             var iframe = document.createElement("iframe");
             iframe.src = url;
-            iframe.style.width = "100%";
-            iframe.style.height = "100%"; // Fill the whole screen
-            iframe.style.border = "0"; // Remove iframe border
+            iframe.style.cssText = "width: 100%; height: 100%; border: 0;";
             newTab.document.body.appendChild(iframe);
         }
 
         function disguiseWebsite() {
-            // Change the title and favicon
             document.title = "WakeID Portal";
             document.getElementById("favicon").href = "wakeIDfavicon.png";
         }
 
-        // Search functionality
         document.getElementById("searchInput").addEventListener("input", function () {
             var searchValue = this.value.toLowerCase();
             var gameList = document.getElementById("gameList");
@@ -149,11 +87,7 @@
                 var button = games[i].getElementsByTagName("button")[0];
                 var gameName = button.innerHTML.toLowerCase();
                 
-                if (gameName.includes(searchValue)) {
-                    games[i].style.display = "block";
-                } else {
-                    games[i].style.display = "none";
-                }
+                games[i].style.display = gameName.includes(searchValue) ? "block" : "none";
             }
         });
     </script>
